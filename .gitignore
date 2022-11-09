@@ -1,4 +1,5 @@
 documents_topic_prob.csv
+docker_stderror 
 *.out
 *.err
 *.log
