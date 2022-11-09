@@ -8,9 +8,9 @@ library_list <- c(getwd(), .libPaths())
 .libPaths(library_list)
 
 # Step 1: Install the Structural Topic Model Package
-install.packages("stm", repos='http://cran.us.r-project.org')
+#install.packages("stm", repos='http://cran.us.r-project.org')
 library("stm")
-install.packages("tm", repos='http://cran.us.r-project.org')
+#install.packages("tm", repos='http://cran.us.r-project.org')
 library("tm")
 
 # Step 1: set up your working directory 

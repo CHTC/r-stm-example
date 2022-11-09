@@ -2,3 +2,4 @@ documents_topic_prob.csv
 *.out
 *.err
 *.log
+.Rproj.user
