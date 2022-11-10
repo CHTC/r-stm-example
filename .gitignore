@@ -3,3 +3,4 @@ docker_stderror
 *.out
 *.err
 *.log
+.Rproj.user
