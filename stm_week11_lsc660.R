@@ -4,6 +4,7 @@
 ## Dataset we used: Canvas -> Module -> Week 9 -> "arboretum.csv"
 
 # Step 1: Install the Structural Topic Model Package
+# Packages are already installed in the Docker container
 #install.packages("stm", repos='http://cran.us.r-project.org')
 library("stm")
 #install.packages("tm", repos='http://cran.us.r-project.org')
