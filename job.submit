@@ -1,23 +1,21 @@
-# template.sub
-# starter submit file for CHTC jobs
+executable = Rscript
+arguments = stm_week11_lsc660.R
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = stm_week11_lsc660.R, arboretum.csv
 
 universe = docker
-docker_image = rocker/r-ver:4.2.1
+docker_image = christinalk/r-stm:4.1.2
+transfer_executable = false
 
 log = job_$(Cluster).log
 error = job_$(Cluster)_$(Process).err
 output = job_$(Cluster)_$(Process).out
 
-executable = stm_week11_lsc660.R 
-# arguments = 
-
-should_transfer_files = YES
-when_to_transfer_output = ON_EXIT
-transfer_input_files = 
-
 request_cpus = 1
-request_memory = 500MB
-request_disk = 500MB
+request_memory = 1GB
+request_disk = 1GB
 
 queue 1
 
